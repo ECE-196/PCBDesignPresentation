@@ -9,9 +9,27 @@ import SwiftUI
 
 @main
 struct PCBDesignPresentationApp: App {
+    @StateObject var model = Presentation()
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(model)
+        }
+        .commands {
+            CommandMenu("Control") {
+                Text("Current frame: \(Int(model.keyframe))")
+                
+                Button("Next Keyframe") {
+                    model.nextKeyframe()
+                }
+                .keyboardShortcut("N")
+                
+                Button("Previous Keyframe") {
+                    model.prevKeyFrame()
+                }
+                .keyboardShortcut("B")
+            }
         }
     }
 }
