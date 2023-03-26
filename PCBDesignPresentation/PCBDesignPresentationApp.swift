@@ -9,7 +9,10 @@ import SwiftUI
 
 @main
 struct PCBDesignPresentationApp: App {
-    @StateObject var model = Presentation()
+    @StateObject var model = Presentation(slides: [
+        Loading(),
+        Title()
+    ])
     
     var body: some Scene {
         WindowGroup {

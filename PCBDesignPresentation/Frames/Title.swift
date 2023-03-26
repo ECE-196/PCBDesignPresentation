@@ -12,9 +12,11 @@ class Title: FrameModel {
     let name: String = "Title"
     let duration: CGFloat = 2
     
-    func view(t: CGFloat, scale: CGFloat) -> some View {
-        TitleView(t: t, scale: scale)
-            .environmentObject(self)
+    func view(t: CGFloat, scale: CGFloat) -> AnyView {
+        AnyView(
+            TitleView(t: t, scale: scale)
+                .environmentObject(self)
+        )
     }
 }
 

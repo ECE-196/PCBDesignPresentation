@@ -8,13 +8,11 @@
 import Foundation
 import SwiftUI
 
-protocol FrameModel: ObservableObject, Identifiable {
-    associatedtype V: View
-    
+protocol FrameModel: ObservableObject {
     var name: String { get }
     var duration: CGFloat { get }
     
-    func view(t: CGFloat, scale: CGFloat) -> V
+    func view(t: CGFloat, scale: CGFloat) -> AnyView
 }
 
 protocol FrameView: View {
