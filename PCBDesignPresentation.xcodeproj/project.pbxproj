@@ -7,27 +7,41 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		40114CAB29EA7ACC00D6DFA9 /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40114CAA29EA7ACC00D6DFA9 /* Video.swift */; };
 		4063FEFC29CF7E1B008A014C /* PCBDesignPresentationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4063FEFB29CF7E1B008A014C /* PCBDesignPresentationApp.swift */; };
 		4063FEFE29CF7E1B008A014C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4063FEFD29CF7E1B008A014C /* ContentView.swift */; };
 		4063FF0029CF7E1B008A014C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4063FEFF29CF7E1B008A014C /* Assets.xcassets */; };
 		4063FF0329CF7E1B008A014C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4063FF0229CF7E1B008A014C /* Preview Assets.xcassets */; };
-		4063FF0B29CF7E40008A014C /* Frame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4063FF0A29CF7E40008A014C /* Frame.swift */; };
+		4063FF0B29CF7E40008A014C /* Slide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4063FF0A29CF7E40008A014C /* Slide.swift */; };
 		4063FF0E29CF7EB7008A014C /* Title.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4063FF0D29CF7EB7008A014C /* Title.swift */; };
 		4063FF1029CF8160008A014C /* Presentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4063FF0F29CF8160008A014C /* Presentation.swift */; };
 		4063FF1229CF893E008A014C /* Loading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4063FF1129CF893E008A014C /* Loading.swift */; };
+		4063FF1629D0F87E008A014C /* Circuits.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4063FF1529D0F87E008A014C /* Circuits.swift */; };
+		4090328729DB2D3F00582819 /* TimelineElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4090328629DB2D3F00582819 /* TimelineElement.swift */; };
+		4090328A29DB2D5400582819 /* TimelineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4090328929DB2D5400582819 /* TimelineView.swift */; };
+		4090328E29DB424100582819 /* PCBRender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4090328D29DB424100582819 /* PCBRender.swift */; };
+		40F8F45D29EBAD670078730A /* ECETimeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F8F45C29EBAD670078730A /* ECETimeline.swift */; };
+		40F8F45F29EBB6C80078730A /* KiCAD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F8F45E29EBB6C80078730A /* KiCAD.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		40114CAA29EA7ACC00D6DFA9 /* Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
 		4063FEF829CF7E1B008A014C /* PCBDesignPresentation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PCBDesignPresentation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4063FEFB29CF7E1B008A014C /* PCBDesignPresentationApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PCBDesignPresentationApp.swift; sourceTree = "<group>"; };
 		4063FEFD29CF7E1B008A014C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4063FEFF29CF7E1B008A014C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4063FF0229CF7E1B008A014C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4063FF0429CF7E1B008A014C /* PCBDesignPresentation.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PCBDesignPresentation.entitlements; sourceTree = "<group>"; };
-		4063FF0A29CF7E40008A014C /* Frame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Frame.swift; sourceTree = "<group>"; };
+		4063FF0A29CF7E40008A014C /* Slide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Slide.swift; sourceTree = "<group>"; };
 		4063FF0D29CF7EB7008A014C /* Title.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Title.swift; sourceTree = "<group>"; };
 		4063FF0F29CF8160008A014C /* Presentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presentation.swift; sourceTree = "<group>"; };
 		4063FF1129CF893E008A014C /* Loading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loading.swift; sourceTree = "<group>"; };
+		4063FF1529D0F87E008A014C /* Circuits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Circuits.swift; sourceTree = "<group>"; };
+		4090328629DB2D3F00582819 /* TimelineElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineElement.swift; sourceTree = "<group>"; };
+		4090328929DB2D5400582819 /* TimelineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineView.swift; sourceTree = "<group>"; };
+		4090328D29DB424100582819 /* PCBRender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PCBRender.swift; sourceTree = "<group>"; };
+		40F8F45C29EBAD670078730A /* ECETimeline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ECETimeline.swift; sourceTree = "<group>"; };
+		40F8F45E29EBB6C80078730A /* KiCAD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KiCAD.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,8 +77,10 @@
 				4063FEFB29CF7E1B008A014C /* PCBDesignPresentationApp.swift */,
 				4063FEFD29CF7E1B008A014C /* ContentView.swift */,
 				4063FF0F29CF8160008A014C /* Presentation.swift */,
-				4063FF0A29CF7E40008A014C /* Frame.swift */,
-				4063FF0C29CF7E9F008A014C /* Frames */,
+				4063FF0A29CF7E40008A014C /* Slide.swift */,
+				40114CAA29EA7ACC00D6DFA9 /* Video.swift */,
+				4090328829DB2D4A00582819 /* Timeline */,
+				4063FF0C29CF7E9F008A014C /* Slides */,
 				4063FEFF29CF7E1B008A014C /* Assets.xcassets */,
 				4063FF0429CF7E1B008A014C /* PCBDesignPresentation.entitlements */,
 				4063FF0129CF7E1B008A014C /* Preview Content */,
@@ -80,13 +96,26 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		4063FF0C29CF7E9F008A014C /* Frames */ = {
+		4063FF0C29CF7E9F008A014C /* Slides */ = {
 			isa = PBXGroup;
 			children = (
 				4063FF1129CF893E008A014C /* Loading.swift */,
 				4063FF0D29CF7EB7008A014C /* Title.swift */,
+				4063FF1529D0F87E008A014C /* Circuits.swift */,
+				4090328D29DB424100582819 /* PCBRender.swift */,
+				40F8F45C29EBAD670078730A /* ECETimeline.swift */,
+				40F8F45E29EBB6C80078730A /* KiCAD.swift */,
 			);
-			path = Frames;
+			path = Slides;
+			sourceTree = "<group>";
+		};
+		4090328829DB2D4A00582819 /* Timeline */ = {
+			isa = PBXGroup;
+			children = (
+				4090328629DB2D3F00582819 /* TimelineElement.swift */,
+				4090328929DB2D5400582819 /* TimelineView.swift */,
+			);
+			path = Timeline;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -117,7 +146,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1420;
-				LastUpgradeCheck = 1420;
+				LastUpgradeCheck = 1430;
 				TargetAttributes = {
 					4063FEF729CF7E1B008A014C = {
 						CreatedOnToolsVersion = 14.2;
@@ -159,11 +188,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40F8F45D29EBAD670078730A /* ECETimeline.swift in Sources */,
 				4063FF0E29CF7EB7008A014C /* Title.swift in Sources */,
-				4063FF0B29CF7E40008A014C /* Frame.swift in Sources */,
+				4090328729DB2D3F00582819 /* TimelineElement.swift in Sources */,
+				4063FF0B29CF7E40008A014C /* Slide.swift in Sources */,
+				4063FF1629D0F87E008A014C /* Circuits.swift in Sources */,
 				4063FEFE29CF7E1B008A014C /* ContentView.swift in Sources */,
+				4090328E29DB424100582819 /* PCBRender.swift in Sources */,
+				40F8F45F29EBB6C80078730A /* KiCAD.swift in Sources */,
 				4063FF1029CF8160008A014C /* Presentation.swift in Sources */,
+				40114CAB29EA7ACC00D6DFA9 /* Video.swift in Sources */,
 				4063FF1229CF893E008A014C /* Loading.swift in Sources */,
+				4090328A29DB2D5400582819 /* TimelineView.swift in Sources */,
 				4063FEFC29CF7E1B008A014C /* PCBDesignPresentationApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -204,6 +240,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -264,6 +301,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -293,6 +331,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"PCBDesignPresentation/Preview Content\"";
 				DEVELOPMENT_TEAM = 84WPVNZ8GM;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -320,6 +359,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"PCBDesignPresentation/Preview Content\"";
 				DEVELOPMENT_TEAM = 84WPVNZ8GM;
 				ENABLE_HARDENED_RUNTIME = YES;

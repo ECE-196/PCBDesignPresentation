@@ -11,7 +11,11 @@ import SwiftUI
 struct PCBDesignPresentationApp: App {
     @StateObject var model = Presentation(slides: [
         Loading(),
-        Title()
+        Title(),
+        Circuits(),
+        PCBRender(),
+        ECETimeline(),
+        KiCAD()
     ])
     
     var body: some Scene {
