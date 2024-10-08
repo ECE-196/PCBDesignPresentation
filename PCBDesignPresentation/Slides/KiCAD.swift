@@ -7,10 +7,16 @@
 
 import Foundation
 import SwiftUI
+import PresentationKit
 
 class KiCAD: SlideModel {
     let name: String = "KiCAD"
     let duration: CGFloat = 2
+    var transition: PresentationKit.Transition = .slide
+    var teleprompt: [String]? = [
+        "...KiCAD! KiCAD is going to enable us to design the...",
+        "...schematic *and* layout. We have tutorials for you to follow and some cool assignments to introduce you to PCB design, enjoy, thanks!",
+    ]
     
     func view(t: CGFloat, scale: CGFloat) -> AnyView {
         AnyView(

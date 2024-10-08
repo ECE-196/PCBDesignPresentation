@@ -7,10 +7,16 @@
 
 import Foundation
 import SwiftUI
+import PresentationKit
 
 class Title: SlideModel {
     let name: String = "Title"
     let duration: CGFloat = 2
+    var transition: PresentationKit.Transition = .fade
+    var teleprompt: [String]? = [
+        "Hello everyone, my name is Adin.\nToday, we're going to learn about...",
+        "...PCBs.\nRaise your hand if you know what a PCB is.",
+    ]
     
     func view(t: CGFloat, scale: CGFloat) -> AnyView {
         AnyView(

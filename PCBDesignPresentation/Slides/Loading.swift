@@ -8,12 +8,21 @@
 import Foundation
 import SwiftUI
 import AVKit
+import PresentationKit
+
+struct AnimatedRectangleProperties {
+    var width: CGFloat = 50
+    var height: CGFloat = 50
+    var offset: CGFloat = 100
+}
 
 class Loading: SlideModel {
     var name: String = "Loading"
     var duration: CGFloat = 1
+    var transition: PresentationKit.Transition = .fade
+    var teleprompt: [String]? = nil
     
-    let startTime = "4:00 PM"
+    let startTime = "6:00 PM"
     
     @Published var formatter: DateFormatter
     var timer: Timer = Timer()
@@ -64,7 +73,7 @@ struct LoadingView: SlideView {
     @EnvironmentObject var model: Loading
     
     var t: CGFloat
-    var scale: CGFloat
+    let scale: CGFloat
     
     @State var player: AVPlayer!
     
@@ -109,7 +118,7 @@ struct LoadingView: SlideView {
             }
         }
         .onAppear {
-            player = AVPlayer(url: createLocalUrl(for: "Intro", ofType: "mp4")!)
+            player = AVPlayer(url: createLocalUrl(for: "Intro2", ofType: "mp4")!)
             player.play()
             
             NotificationCenter.default.addObserver(forName: .AVPlayerItemDidPlayToEndTime, object: self.player.currentItem, queue: .main) { _ in
@@ -117,11 +126,17 @@ struct LoadingView: SlideView {
                 self.player.play()
             }
         }
-        .onChange(of: t) { newValue in
+        .onChange(of: t) { _, newValue in
             if newValue == 0 {
                 player.seek(to: .zero)
                 player.play()
             }
         }
     }
+}
+
+#Preview {
+    Loading()
+        .view(t: 0, scale: 0.25)
+        .frame(width: 960, height: 540)
 }

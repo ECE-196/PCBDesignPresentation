@@ -7,10 +7,20 @@
 
 import Foundation
 import SwiftUI
+import PresentationKit
 
 class Circuits: SlideModel {
     let name: String = "Circuits"
     let duration: CGFloat = 6
+    var transition: PresentationKit.Transition = .fade
+    var teleprompt: [String]? = [
+        "Now, can someone tell me what this is? [Schematic]",
+        "How about this? You guys should be very familiar with this! [Breadboard]",
+        "Or this? [PCB]",
+        "These are *all* circuits!",
+        "They're just different ways to manifest a circuit in the world.",
+        "We're going to focus on the relationship between these particular representations of circuits.\nCan someone tell me why you may want to make a PCB as opposed to using a breadboard? So what *is* a PCB? Like what exactly makes them up?"
+    ]
     
     func view(t: CGFloat, scale: CGFloat) -> AnyView {
         AnyView(

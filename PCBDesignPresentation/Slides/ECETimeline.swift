@@ -7,10 +7,13 @@
 
 import Foundation
 import SwiftUI
+import PresentationKit
 
 class ECETimeline: SlideModel {
     let name: String = "Timeline"
     let duration: CGFloat = 1
+    var transition: PresentationKit.Transition = .slide
+    var teleprompt: [String]? = nil
     
     func view(t: CGFloat, scale: CGFloat) -> AnyView {
         AnyView(

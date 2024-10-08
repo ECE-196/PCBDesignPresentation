@@ -6,37 +6,20 @@
 //
 
 import SwiftUI
+import PresentationKit
 
 @main
 struct PCBDesignPresentationApp: App {
-    @StateObject var model = Presentation(slides: [
+    @StateObject var presentation = Presentation(bgColor: .init(red: 36/255, green: 37/255, blue: 56/255), slides: [
         Loading(),
         Title(),
         Circuits(),
         PCBRender(),
-        ECETimeline(),
+//        ECETimeline(),
         KiCAD()
     ])
     
     var body: some Scene {
-        WindowGroup {
-            ContentView()
-                .environmentObject(model)
-        }
-        .commands {
-            CommandMenu("Control") {
-                Text("Current frame: \(Int(model.keyframe))")
-                
-                Button("Next Keyframe") {
-                    model.nextKeyframe()
-                }
-                .keyboardShortcut("N")
-                
-                Button("Previous Keyframe") {
-                    model.prevKeyFrame()
-                }
-                .keyboardShortcut("B")
-            }
-        }
+        PresentationScene(presentation: presentation)
     }
 }
